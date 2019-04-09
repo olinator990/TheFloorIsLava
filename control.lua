@@ -16,7 +16,8 @@ script.on_event
 
 
 	     -- if player is standing still, light a fire underneath player
-	     if player.position.x == Temporary.last_position[index].x and
+	     if Temporary.last_position[index] and
+		player.position.x == Temporary.last_position[index].x and
 		player.position.y == Temporary.last_position[index].y then
 		player.surface.create_entity{name="fire-flame", position=player.position, force="neutral"}
 	     end

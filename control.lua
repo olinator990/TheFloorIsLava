@@ -1,6 +1,7 @@
 --control.lua
 
 require "config"
+require "globals"
 
 script.on_event
 ({defines.events.on_tick},
@@ -11,10 +12,20 @@ script.on_event
 	  -- check if player stands on non-manamade tiling
 	  undertile = player.surface.get_tile(player.position).name
 	  if player.character and not(undertile == "stone-path" or string.find("concrete", undertile)) then
+
+	     local env_damage = Config.environment_damage
+	     if player.vehicle then
+		env_damage = Config.environment_damage * Config.vehicle_damage_modifier
+	     end
+	     
 	     -- do damage
-	     player.character.damage(5, player.force, "fire")
+	     player.character.damage(env_damage, player.force, "fire")
 
-
+	     -- if last position is nil, set it to zeros to avoid errors
+	     if not Temporary.last_position then
+		Temporary.last_position[index] = {x=0, y=0}
+	     end
+	     
 	     -- if player is standing still, light a fire underneath player
 	     if Temporary.last_position[index] and
 		player.position.x == Temporary.last_position[index].x and
@@ -87,3 +98,4 @@ script.on_event
     Temporary.last_position[event.player_index] = {x=plr.position.x, y=plr.position.y}
  end
 )
+

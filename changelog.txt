@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: 6 September 2020
+  Changes:
+    - Now works with any modded tile that has a 'hidden tile' beneath it or contains the name 'factory'
+    - Moved initial 30 stone bricks to crashed ship
+    - Added respawn with 10 stone bricks
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 6 September 2020
+  Changes:
+    - Description fixes
+---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 6 September 2020
   Changes:

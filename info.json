@@ -1,11 +1,11 @@
 {
-    "name": "TheFloorIsLava",
-    "version": "0.1.2",
-    "title": "The Floor Is Lava",
+    "name": "TheFloorIsLavaRevival",
+    "version": "0.2.0",
+    "title": "The Floor Is Lava Revival",
     "author": "Weston Kelliher",
     "contact": "",
     "homepage": "",
-    "factorio_version": "0.17",
-    "dependencies": ["base >= 0.17"],
-    "description": "Extreme radiation causes you to take damage unless you're on manmade tiles. A fun challenge for territory expansion."
+    "factorio_version": "1.0",
+    "dependencies": ["base >= 1.0"],
+    "description": "Extreme radiation causes you to take damage unless you're on manmade tiles. A fun challenge for territory expansion.\nOriginal mod my westoncraft, updated to 1.0 by Xorimuth."
 }

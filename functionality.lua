@@ -36,7 +36,7 @@ function let_player_start(plr_ind)
     local plr = game.players[plr_ind]
    
    -- give the player some bricks initially
-    plr.insert({name="stone-brick", count=10})
+    plr.insert({name="stone-brick", count=30})
 
     -- make sure the player isn't set on fire uppon world creation
     if not plr.surface.get_tile(plr.position).valid then return nil end

@@ -1,0 +1,8 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 6 September 2020
+  Changes:
+    - Updated for 1.0
+    - Support for modded tiles with 'road' in their name such as Transport Drones
+    - Reduced initial starting size radius from 10 to 9 to make it look nicer
+    - Increased starting stone bricks from 10 to 30

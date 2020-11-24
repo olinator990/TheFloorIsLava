@@ -1,8 +1,8 @@
 Config = {}
 
 
-Config.environment_damage = 3
-Config.vehicle_damage_modifier = .2
+Config.environment_damage = 5
+Config.vehicle_damage_modifier = .4
 
 Config.beginning_path_radius = 9
 

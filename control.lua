@@ -57,7 +57,12 @@ script.on_init(
 
 script.on_event(defines.events.on_player_changed_surface,
  function(event)
-    Func.let_player_start(event.player_index)
+    
+		if game.active_mods["Factorissimo2"] then -- Factorissimo compatibility
+			
+		else
+		   Func.let_player_start(event.player_index)		
+		end
  end
 )
 
